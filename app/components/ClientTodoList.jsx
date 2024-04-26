@@ -12,9 +12,9 @@ export default function ClientTodoList() {
   const [todos, setTodos] = useState();
   useEffect(() => {
     const fetchData = async () => {
-      const { todos } = await getData();
-
-      setTodos(todos);
+      const { data } = await getData();
+      console.log(data);
+      setTodos(data.todos);
     };
     fetchData();
   }, []);
