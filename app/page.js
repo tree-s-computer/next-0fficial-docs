@@ -11,7 +11,7 @@ export default async function Home() {
       <h1>Test Todo Component Page</h1>
 
       <TodoInput />
-      <ClientTodoList />
+      {/* <ClientTodoList /> */}
       {/*rcc*/}
       <TodoList />
       {/*rsc */}

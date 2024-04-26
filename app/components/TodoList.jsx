@@ -1,14 +1,18 @@
 import axios from "axios";
 
 async function getData() {
-  const res = await fetch("http://localhost:3000/api/todos");
-  console.log(res);
+  const res = await fetch("http://localhost:3000/api/todos", {
+    next: { revalidate: 10 },
+  });
+
+  // 기본 cache
+  // no store option
+
   return res.json();
 }
 
 export default async function TodoList() {
   const { todos } = await getData();
-  console.log(todos);
 
   return (
     <div>
