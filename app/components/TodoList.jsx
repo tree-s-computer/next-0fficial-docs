@@ -12,6 +12,7 @@ export default async function TodoList() {
 
   return (
     <div>
+      <div> Test RCC </div>
       {todos.map((todo) => (
         <li
           key={todo.id}

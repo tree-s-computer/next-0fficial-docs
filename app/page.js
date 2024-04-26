@@ -1,5 +1,6 @@
 import TodoList from "./components/TodoList";
 import TodoInput from "./components/TodoInput";
+import ClientTodoList from "./components/ClientTodoList";
 
 export default async function Home() {
   {
@@ -8,7 +9,9 @@ export default async function Home() {
   return (
     <main className="flex flex-col items-center justify-between min-h-screen p-24">
       <h1>Test Todo Component Page</h1>
+
       <TodoInput />
+      <ClientTodoList />
       {/*rcc*/}
       <TodoList />
       {/*rsc */}
